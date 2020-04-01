@@ -1,8 +1,55 @@
 <!DOCTYPE html>
 <html>
-	<head></head>
-	<body>
-		<h1> My Website </h1>
-	</body>
+<head>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/@mdi/font@4.x/css/materialdesignicons.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/vuetify@2.x/dist/vuetify.min.css" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, minimal-ui">
+</head>
+<body>
+  <div id="app">
+    <v-app>
+        <v-card>
+          <v-toolbar max-width="100%" class="hidden-sm-and-down purple darken-4">
+              <v-toolbar-title class="white--text">Personal Website</v-toolbar-title>
+              <v-spacer></v-spacer>
+              <v-btn depressed class="mr-4 purple darken-4 white--text">Home</v-btn>
+              <v-btn depressed class="mr-4 mt-0 purple darken-4 white--text">Projects</v-btn>
+              <v-btn depressed class="mt-0 purple darken-4 white--text">Bio</v-btn>
+          </v-toolbar>
+        </v-card>
+        <v-card id="main_body" height="100%">
+            <v-card-text class="text-justify">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris facilisis et quam a tristique. Aliquam eu erat tristique, sagittis velit elementum, iaculis quam. Sed tempor, nunc a facilisis bibendum, lectus turpis commodo sapien, id aliquam elit libero id magna. Etiam condimentum lobortis nulla eu lacinia. Quisque at congue massa. Fusce elementum est elementum ante luctus dictum. Suspendisse posuere dolor non augue sodales condimentum. Maecenas ultrices metus ut accumsan porta. Praesent non aliquam magna, a dictum ipsum. Nullam condimentum ut felis sollicitudin imperdiet. Morbi non tincidunt nunc. Nulla aliquet pellentesque eros, eu elementum nibh elementum a.
+
+In consequat tristique ligula, ac pellentesque sapien vulputate et. Aliquam varius libero elit, a laoreet ipsum ornare vel. Mauris euismod ex non erat blandit consectetur. Nulla volutpat vel ipsum id accumsan. Sed porttitor ante eget nibh lacinia, dapibus imperdiet leo iaculis. Morbi lacinia consequat condimentum. Sed magna eros, placerat in varius ut, auctor vel lectus.
+
+Curabitur tristique, nibh sed aliquet semper, orci augue hendrerit turpis, eu dignissim nunc nunc et ex. Duis ac mattis ipsum, sed rutrum felis. Morbi scelerisque semper leo, eu posuere dolor malesuada consequat. Fusce eget vestibulum leo. Fusce vel mattis eros. Suspendisse rutrum, elit sit amet tempus tempor, quam urna posuere lacus, quis sagittis augue magna non ligula. Sed fringilla mi ornare, congue lectus id, pharetra quam. Praesent finibus consequat metus nec blandit. Ut a scelerisque massa.
+
+Phasellus risus mauris, tempus sodales velit at, volutpat sagittis ante. Quisque ligula mi, blandit eget convallis in, porta sit amet neque. Nullam nec eleifend massa. Integer non metus non leo posuere lacinia vitae nec libero. Praesent ultrices tempor dapibus. Nam varius facilisis sollicitudin. Mauris diam diam, ultrices ut orci non, eleifend auctor elit.
+
+Proin libero mauris, sodales vel erat sed, tempor bibendum tellus. Nunc facilisis vehicula ex, eu dictum risus gravida vel. Fusce ac ligula vel justo placerat vulputate. Praesent eu nunc nibh. Maecenas rutrum orci sed augue bibendum, at suscipit nunc pellentesque. Pellentesque cursus tempus velit, nec semper magna porta eget. Suspendisse consequat ac erat at gravida. Pellentesque aliquam sodales vulputate. Morbi at eleifend quam. Donec eget tincidunt ante, vitae fermentum tellus.
+            </v-card-text>
+        </v-card>
+        <v-card id="footer" class="purple lighten-5" flat>
+            <v-card-text class="font-weight-thin text-center">All rights reserve</v-card-text>
+        </v-card>
+    </v-app>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/vue@2.x/dist/vue.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vuetify@2.x/dist/vuetify.js"></script>
+  <script>
+    new Vue({
+      el: '#app',
+      vuetify: new Vuetify(),
+        data:{
+            drawer:null,
+        }
+    })
+  </script>
+  
+</body>
+
 
 </html>
