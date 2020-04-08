@@ -12,11 +12,11 @@
 
         <v-app-bar class="indigo darken-4" app>
           <!--<v-app-bar-nav-icon></v-app-bar-nav-icon>-->
-          <v-toolbar-title class="white--text font-weight-regular">Welcome!</v-toolbar-title>
+          <v-toolbar-title class="white--text font-weight-regular">{{title}}</v-toolbar-title>
           <v-spacer></v-spacer>
-          <v-btn depressed class="mr-4 white--text" text>Home</v-btn>
-          <v-btn depressed class="mr-4 mt-0 white--text" text>Projects</v-btn>
-          <v-btn depressed class="mt-0 white--text" text>Bio</v-btn>
+          <v-avatar>
+            <v-img src="https://upload.wikimedia.org/wikipedia/commons/9/96/Flag_of_the_Philippines_-_cropped_sun.svg"></v-img>
+          </v-avatar>
         </v-app-bar>
         <v-content>
           <v-container class="ma-0 pa-0" fluid>
@@ -29,7 +29,7 @@
                     <v-list-item-avatar color="light-blue" right><img src="https://bit.ly/2x3yZGG"/></v-list-item-avatar>
                     <v-list-item-content>
                       <v-list-item-title class="headline white--text">Jean Jay Quitayen</v-list-item-title>
-                      <v-list-item-subtitle>📡 | 👨🏻‍💻 | 🧑🏻‍🔬 | 📈</v-list-item-subtitle>
+                      <v-list-item-subtitle class="red--text font-weight-thin">📡 | 👨🏻‍💻 | 🧑🏻‍🔬 | 📈</v-list-item-subtitle>
                     </v-list-item-content>
                   </v-list-item>
 
@@ -92,6 +92,7 @@
             skills: {
               embedded:['Arduino', 'Atmel AVR', 'ARM', 'FPGA'],
               webdev:['Javascript', 'VueJS', 'React', 'Python']},
+            title: "Welcome!"
         },
 
     })
