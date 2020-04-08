@@ -20,9 +20,11 @@
         </v-app-bar>
         <v-content>
           <v-container class="ma-0 pa-0" fluid>
-            <v-row class="ma-0 pa-0 fill-height">
-              <v-col cols="12">
-                <v-card class="ma-auto indigo darken-4" id="main_body" width="40%">
+            <v-row class="ma-0 pa-0 justify-center">
+              <v-col 
+                    lg="4"
+                    md="12">
+                <v-card class="ma-auto indigo darken-4" id="main_body">
                   <v-list-item>
                     <v-list-item-avatar color="light-blue" right><img src="https://bit.ly/2x3yZGG"/></v-list-item-avatar>
                     <v-list-item-content>
@@ -42,9 +44,11 @@
 
               </v-col>
             </v-row>
-            <v-row class="ma-0 pa-0 fill-height">
-              <v-col cols="12">
-                <v-card class="ma-auto purple darken-4 white--text" width="40%" >
+            <v-row class="ma-0 pa-0 justify-center">
+              <v-col
+                    lg="4"
+                    md="12">
+                <v-card class="ma-auto purple darken-4 white--text">
                   <v-card-title>Professional</v-card-title>
                   <v-list-item v-for='field in skills'>
                     <v-list-item-content class="white--text" v-for="skill in field">
@@ -54,9 +58,11 @@
                 </v-card>
               </v-col>
             </v-row>
-            <v-row class="ma-0 pa-0 fill-height">
-              <v-col cols="12">
-                <v-card class="ma-auto blue darken-4 white--text" width="40%" >
+            <v-row class="ma-0 pa-0 justify-center">
+              <v-col
+                    lg="4"
+                    md="12">
+                <v-card class="ma-auto blue darken-4 white--text">
                   <v-card-title>Skills</v-card-title>
                   <v-list-item v-for='field in skills'>
                     <v-list-item-content class="white--text" v-for="skill in field">
